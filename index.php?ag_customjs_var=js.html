@@ -499,74 +499,74 @@ jQuery(document).ready(function($){
         }
     }
      
-    $(".flexslider ul.slides li a").live('click', function(e){ e.preventDefault();
-       
-       /*Set Function Variables */       
-        $this = $(this);
-        $selectedthing = $this;
-        $postId = $($this).attr('data-url');
-
-        // Find Previous and Next Portfolio Items
-        findprevnext($selectedthing, $filterstyle);
-
-        $('.ajaxloading').fadeIn(500);
-
-        // Scroll to the Loading Container
-        scrollwindow('#loadingcontainer');
-       
-                if ($state !== 'closed'){ 
-                $('#ajaxcontainer').animate({ height: "toggle"}, 500, 'easeOutCubic');
-                }
-                ajaxouter.load(url, {
-			    id: $postId
-			     }, 
-                 	function() {
-        				if ($state == 'closed'){   
-        					
-                            $('#ajaxcontainer').animate({ height: "toggle"}, 500, 'easeOutCubic'); 
-                                   
-                                   /* If there's a previous */
-                                    if(typeof $prevId  == 'string') {
-                                   		$('a#prev-port').css('display', 'block');
-                                    } else {
-                                    	$('a#prev-port').css('display', 'none');
-                                    } 
-                                    
-                                    /* If there's a Next*/
-                                    if(typeof $nextId  == 'string') {
-                                    	$('a#next-port').css('display', 'block');
-                                    } else {
-                                    	$('a#next-port').css('display', 'none');
-                                    }
-                                       
-        	     		 $state = 'open';
-                         
-              		 } else {
-                     
-                    		$('#ajaxcontainer').animate({ height: "toggle"}, 500, 'easeOutCubic');
-
-									/* If there's a previous */
-                                    if(typeof $prevId  == 'string') {
-                                    	$('a#prev-port').css('display', 'block');
-                                    } else {
-                                    	$('a#prev-port').css('display', 'none');
-                                    } 
-                                    
-                                    /* If there's a Next*/
-                                    if(typeof $nextId  == 'string') {
-                                    	$('a#next-port').css('display', 'block');
-                                    } else {
-                                    	$('a#next-port').css('display', 'none');
-                                    } 
-                                     
-                     }
-                     
-                       $('.ajaxloading').fadeOut(500);
-           		}
-            ); 
-            
-        return false; 
-});
+//     $(".flexslider ul.slides li a").live('click', function(e){ e.preventDefault();
+//
+//        /*Set Function Variables */
+//         $this = $(this);
+//         $selectedthing = $this;
+//         $postId = $($this).attr('data-url');
+//
+//         // Find Previous and Next Portfolio Items
+//         findprevnext($selectedthing, $filterstyle);
+//
+//         $('.ajaxloading').fadeIn(500);
+//
+//         // Scroll to the Loading Container
+//         scrollwindow('#loadingcontainer');
+//
+//                 if ($state !== 'closed'){
+//                 $('#ajaxcontainer').animate({ height: "toggle"}, 500, 'easeOutCubic');
+//                 }
+//                 ajaxouter.load(url, {
+// 			    id: $postId
+// 			     },
+//                  	function() {
+//         				if ($state == 'closed'){
+//
+//                             $('#ajaxcontainer').animate({ height: "toggle"}, 500, 'easeOutCubic');
+//
+//                                    /* If there's a previous */
+//                                     if(typeof $prevId  == 'string') {
+//                                    		$('a#prev-port').css('display', 'block');
+//                                     } else {
+//                                     	$('a#prev-port').css('display', 'none');
+//                                     }
+//
+//                                     /* If there's a Next*/
+//                                     if(typeof $nextId  == 'string') {
+//                                     	$('a#next-port').css('display', 'block');
+//                                     } else {
+//                                     	$('a#next-port').css('display', 'none');
+//                                     }
+//
+//         	     		 $state = 'open';
+//
+//               		 } else {
+//
+//                     		$('#ajaxcontainer').animate({ height: "toggle"}, 500, 'easeOutCubic');
+//
+// 									/* If there's a previous */
+//                                     if(typeof $prevId  == 'string') {
+//                                     	$('a#prev-port').css('display', 'block');
+//                                     } else {
+//                                     	$('a#prev-port').css('display', 'none');
+//                                     }
+//
+//                                     /* If there's a Next*/
+//                                     if(typeof $nextId  == 'string') {
+//                                     	$('a#next-port').css('display', 'block');
+//                                     } else {
+//                                     	$('a#next-port').css('display', 'none');
+//                                     }
+//
+//                      }
+//
+//                        $('.ajaxloading').fadeOut(500);
+//            		}
+//             );
+//
+//         return false;
+// });
 
 
 jQuery('a#next-port').live('click', function(e){ e.preventDefault();
