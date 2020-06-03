@@ -1,0 +1,136 @@
+/*
+Theme Name:     Refugee Protest Movies
+Theme URI:      http://refugee-protest-movies.staging.aboutsource.net
+Author:         about:source
+Author URI:     http://www.aboutsource.net
+Template:       aware
+Version:        0.2
+*/
+
+@import url("../aware/style.css");
+@import url("typography.css%3Fv=2.css");
+
+.widget.widget_nav_menu .sub-menu li {
+    padding-left: 3ex;
+}
+
+.widget.widget_nav_menu .sub-menu li:last-child {
+    border-bottom: 0 none;
+    padding-bottom: 0;
+}
+
+.widget.widget_nav_menu .sub-menu {
+    margin-bottom: 0;
+}
+
+.navcontainer .logo span {
+    background: transparent url('images/header-crosspoint-5.png') no-repeat scroll 0 0;
+    width: 320px;
+    height: 132px;
+    display:block;
+    text-indent: -999px;
+}
+
+.navcontainer .logo span:hover {
+    background: transparent url('images/header-crosspoint-5-rollover.png') no-repeat scroll 0 0;
+}
+
+i[class*="glyphicon-"] {
+    width:24px;
+    height: 24px;
+    background: white none no-repeat scroll 0 0;
+    display:inline-block;
+}
+
+
+i.social-media {
+    background: url(images/social-media-sprite-32.png) no-repeat top left;
+    width:32px;
+    height:32px;
+    display:inline-block;
+}
+
+
+i.social-media-facebook { background-position: 0 0;}
+a:hover i.social-media-facebook { background-position: 0 -80px;}
+
+
+i.social-media-twitter { background-position: 0 -160px; }
+a:hover i.social-media-twitter { background-position: 0 -240px; }
+
+
+i.social-media-youtube { background-position: 0 -320px; }
+a:hover i.social-media-youtube { background-position: 0 -400px; }
+
+i.glyphicon-flickr { background-image: url('images/glyphicons/png/glyphicons_415_flickr.png'); }
+i.glyphicon-camera { background-image: url('images/glyphicons/png/glyphicons_011_camera.png'); }
+i.glyphicon-camera-small { background-image: url('images/glyphicons/png/glyphicons_047_camera_small.png'); }
+
+#menu-social-media.sf-menu,
+#menu-social-media.sf-menu *{
+    padding:0;
+    margin:0;
+}
+
+.social-media-menu-wrapper{
+    margin-top:-60px;
+}
+
+#menu-social-media.sf-menu {
+    padding-right: 30px !important;
+    z-index: 1;
+}
+
+#menu-social-media li span {
+    display: none;
+}
+
+#menu-social-media.sf-menu li {
+    padding-left: 24px;
+
+}
+
+#menu-hauptmenu {
+    z-index: 100;
+    position: relative;
+}
+
+#menu-social-media li:first-child {
+    padding-left:0;
+}
+
+#menu-social-media li a:hover {
+    opacity: 0.75;
+    -moz-opacity: 0.75;
+    -o-opacity: 0.75;
+    -webkit-opacity: 0.75;
+}
+
+body.home.page .portfolioitem div[class*='skill-icon-'] {
+    display: none;
+    position: absolute;
+    right: 5px;
+    bottom:8px;
+    width: 34px;
+    height:30px;
+    background: transparent none no-repeat scroll 4px 5px;
+    float:right;
+}
+
+body.home.page .portfolioitem div.skill-icon-foto {
+    background-image: url('images/glyphicons/png/glyphicons_011_camera_white.png');
+}
+
+body.home.page .portfolioitem div.skill-icon-clip {
+    background-image: url('images/glyphicons/png/glyphicons_047_camera_small_white.png');
+    background-position: 4px 4px;
+}
+
+.flexslider, .portfolioitem.darkbg {
+    background-image: none !important;
+}
+
+body.postid-101 .featuredimage {
+    display:none;
+}
+
